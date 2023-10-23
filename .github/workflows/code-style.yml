@@ -51,6 +51,6 @@ jobs:
           node-version: 18.12.1
       - run: yarn install
       - name: Lint Ruby files
-        run: bundle exec rubocop --parallel --config .rubocop.yml --force-exclusion
+        run: bin/rubocop --parallel
       - name: Check code style
         run: ./node_modules/.bin/prettier --plugin=@prettier/plugin-ruby --check '**/*.rb'
