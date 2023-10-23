@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'boot'
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -29,9 +29,12 @@ module Slek
 
     # Autocorrect generated code
     config.generators.after_generate do |files|
-      parsable_files = files.filter { |file| file.end_with?('.rb') }
+      parsable_files = files.filter { |file| file.end_with?(".rb") }
       unless parsable_files.empty?
-        system("bundle exec rubocop -A --fail-level=E #{parsable_files.shelljoin}", exception: true)
+        system(
+          "bundle exec rubocop -A --fail-level=E #{parsable_files.shelljoin}",
+          exception: true
+        )
       end
     end
   end
