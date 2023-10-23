@@ -11,3 +11,4 @@ AllCops:
     - "bin/**/*"
     - "config/**/*.rb"
     - "node_modules/**/*"
+    - vendor/**/*.rb
