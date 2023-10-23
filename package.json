@@ -1,0 +1,12 @@
+{
+  "name": "slek",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jordyvanvorselen/slek.git",
+  "author": "Jordy van Vorselen <jordy.van.vorselen@kabisa.nl>",
+  "license": "MIT",
+  "dependencies": {
+    "@prettier/plugin-ruby": "^4.0.2",
+    "prettier": "^3.0.3"
+  }
+}
