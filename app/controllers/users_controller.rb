@@ -5,6 +5,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    raise "To be implemented!"
+    name = params["name"]
+
+    return unless name.length > 0
+
+    raise "Create user!"
   end
 end
