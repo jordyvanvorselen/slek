@@ -7,8 +7,6 @@ class UsersController < ApplicationController
   def create
     name = params["name"]
 
-    return unless name.length > 0
-
-    raise "Create user!"
+    User.create!(name: name)
   end
 end
