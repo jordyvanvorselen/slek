@@ -12,3 +12,6 @@ AllCops:
     - "config/**/*.rb"
     - "node_modules/**/*"
     - "vendor/**/*"
+
+Style/Documentation:
+  Enabled: false
