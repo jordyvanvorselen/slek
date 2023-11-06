@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   root "users#new"
 
   resources :users, only: %i[new create]
+  resources :channels, only: %i[index]
 end

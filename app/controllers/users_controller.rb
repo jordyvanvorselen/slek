@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     @user.save!
 
-    redirect_to @user, notice: "Welcome #{@user.name}!"
+    redirect_to channels_url
   rescue ActiveRecord::RecordInvalid
     render :new, status: :unprocessable_entity
   end
