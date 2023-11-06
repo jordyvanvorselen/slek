@@ -78,3 +78,4 @@ end
 
 gem "rubocop", "~> 1.57", require: false
 gem "rubocop-rails", "~> 2.21", require: false
+gem 'rubocop-rspec', require: false

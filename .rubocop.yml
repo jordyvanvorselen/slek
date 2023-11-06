@@ -1,4 +1,6 @@
-require: rubocop-rails
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 inherit_from:
   - node_modules/@prettier/plugin-ruby/rubocop.yml
@@ -12,3 +14,9 @@ AllCops:
     - "config/**/*.rb"
     - "node_modules/**/*"
     - "vendor/**/*"
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
