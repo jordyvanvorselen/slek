@@ -1,7 +1,10 @@
 <h1>Hello! Who are you?</h1>
 
-<%= form_for User do |form| %>
+<%= form_with model: @user do |form| %>
   <%= form.label :name, "Name:" %>
   <%= form.text_field :name %>
+
+  <p><%= @user.errors.full_messages.join(", ") %></p>
+
   <%= form.submit "Continue" %>
 <% end %>
