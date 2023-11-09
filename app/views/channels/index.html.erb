@@ -1,1 +1,11 @@
 <h1>Channels</h1>
+
+<ul>
+  <% @channels.each do |channel| %>
+    <li><a># <%= channel.name.downcase %></a></li>
+  <% end %>
+
+  <li>
+    <%= button_to "+", new_channel_path, method: :get %>
+  </li>
+</ul>

@@ -1,0 +1,12 @@
+<h1>Create a new channel</h1>
+
+<%= form_with model: @channel do |form| %>
+  <%= form.label :name, "#" %>
+  <%= form.text_field :name %>
+
+  <p><%= @channel.errors.full_messages.join(", ") %></p>
+
+  <%= form.submit "Create" %>
+<% end %>
+
+<%= button_to "Cancel", channels_path, method: :get %>
